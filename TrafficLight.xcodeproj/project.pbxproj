@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278BBEC72BE129120088AB47 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBEC62BE129120088AB47 /* MainViewModel.swift */; };
+		278BBECA2BE1311C0088AB47 /* TrafficLightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBEC92BE1311C0088AB47 /* TrafficLightScreen.swift */; };
+		278BBECC2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBECB2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift */; };
+		278BBED22BE138D40088AB47 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBED12BE138D40088AB47 /* MainViewModelTests.swift */; };
 		27EACE122BE126C700422A9B /* TrafficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EACE112BE126C700422A9B /* TrafficLightApp.swift */; };
-		27EACE142BE126C700422A9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EACE132BE126C700422A9B /* ContentView.swift */; };
+		27EACE142BE126C700422A9B /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EACE132BE126C700422A9B /* MainScreen.swift */; };
 		27EACE162BE126C800422A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EACE152BE126C800422A9B /* Assets.xcassets */; };
 		27EACE192BE126C800422A9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EACE182BE126C800422A9B /* Preview Assets.xcassets */; };
-		27EACE232BE126C900422A9B /* TrafficLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EACE222BE126C900422A9B /* TrafficLightTests.swift */; };
 		27EACE2D2BE126C900422A9B /* TrafficLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EACE2C2BE126C900422A9B /* TrafficLightUITests.swift */; };
 		27EACE2F2BE126C900422A9B /* TrafficLightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EACE2E2BE126C900422A9B /* TrafficLightUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -34,13 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278BBEC62BE129120088AB47 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		278BBEC92BE1311C0088AB47 /* TrafficLightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightScreen.swift; sourceTree = "<group>"; };
+		278BBECB2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightScreenViewModel.swift; sourceTree = "<group>"; };
+		278BBED12BE138D40088AB47 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 		27EACE0E2BE126C700422A9B /* TrafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EACE112BE126C700422A9B /* TrafficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightApp.swift; sourceTree = "<group>"; };
-		27EACE132BE126C700422A9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		27EACE132BE126C700422A9B /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		27EACE152BE126C800422A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27EACE182BE126C800422A9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27EACE1E2BE126C900422A9B /* TrafficLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27EACE222BE126C900422A9B /* TrafficLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightTests.swift; sourceTree = "<group>"; };
 		27EACE282BE126C900422A9B /* TrafficLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EACE2C2BE126C900422A9B /* TrafficLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightUITests.swift; sourceTree = "<group>"; };
 		27EACE2E2BE126C900422A9B /* TrafficLightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -71,6 +77,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		278BBEC32BE127C00088AB47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		278BBEC42BE127C80088AB47 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				278BBEC82BE130FE0088AB47 /* TrafficLight */,
+				278BBEC52BE129000088AB47 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		278BBEC52BE129000088AB47 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				27EACE132BE126C700422A9B /* MainScreen.swift */,
+				278BBEC62BE129120088AB47 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		278BBEC82BE130FE0088AB47 /* TrafficLight */ = {
+			isa = PBXGroup;
+			children = (
+				278BBEC92BE1311C0088AB47 /* TrafficLightScreen.swift */,
+				278BBECB2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift */,
+			);
+			path = TrafficLight;
+			sourceTree = "<group>";
+		};
+		278BBED02BE138B70088AB47 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				278BBED12BE138D40088AB47 /* MainViewModelTests.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		27EACE052BE126C700422A9B = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +142,9 @@
 		27EACE102BE126C700422A9B /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
+				278BBEC42BE127C80088AB47 /* Screens */,
+				278BBEC32BE127C00088AB47 /* Models */,
 				27EACE112BE126C700422A9B /* TrafficLightApp.swift */,
-				27EACE132BE126C700422A9B /* ContentView.swift */,
 				27EACE152BE126C800422A9B /* Assets.xcassets */,
 				27EACE172BE126C800422A9B /* Preview Content */,
 			);
@@ -113,7 +162,7 @@
 		27EACE212BE126C900422A9B /* TrafficLightTests */ = {
 			isa = PBXGroup;
 			children = (
-				27EACE222BE126C900422A9B /* TrafficLightTests.swift */,
+				278BBED02BE138B70088AB47 /* Screens */,
 			);
 			path = TrafficLightTests;
 			sourceTree = "<group>";
@@ -257,8 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EACE142BE126C700422A9B /* ContentView.swift in Sources */,
+				27EACE142BE126C700422A9B /* MainScreen.swift in Sources */,
 				27EACE122BE126C700422A9B /* TrafficLightApp.swift in Sources */,
+				278BBECC2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift in Sources */,
+				278BBEC72BE129120088AB47 /* MainViewModel.swift in Sources */,
+				278BBECA2BE1311C0088AB47 /* TrafficLightScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EACE232BE126C900422A9B /* TrafficLightTests.swift in Sources */,
+				278BBED22BE138D40088AB47 /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -430,6 +482,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +512,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +535,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SA5632LG84;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.interview.kbc.TrafficLightTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +555,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SA5632LG84;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.interview.kbc.TrafficLightTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,6 +577,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.interview.kbc.TrafficLightUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -541,6 +598,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.interview.kbc.TrafficLightUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
