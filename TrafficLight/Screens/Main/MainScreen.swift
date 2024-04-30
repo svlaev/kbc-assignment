@@ -34,7 +34,11 @@ struct MainScreen: View {
             .padding()
             .navigationTitle("Vehicle")
             .navigationDestination(isPresented: $viewModel.shouldStartDriving, destination: {
-                TrafficLightScreen(carModel: viewModel.carModel)
+                if viewModel.shouldStartDriving {
+                    TrafficLightScreen(carModel: viewModel.carModel)
+                } else {
+                    EmptyView()
+                }
             })
             .onAppear {
                 viewModel.onViewAppear()

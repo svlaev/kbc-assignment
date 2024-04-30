@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278BBC752BE14949002D144F /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBC742BE14949002D144F /* TrafficLight.swift */; };
+		278BBC782BE14BF0002D144F /* TrafficLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBC772BE14BF0002D144F /* TrafficLightTests.swift */; };
+		278BBC7A2BE18832002D144F /* TrafficLightScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBC792BE18832002D144F /* TrafficLightScreenViewModelTests.swift */; };
+		278BBC7D2BE1891C002D144F /* TrafficLightMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBC7C2BE1891C002D144F /* TrafficLightMock.swift */; };
 		278BBEC72BE129120088AB47 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBEC62BE129120088AB47 /* MainViewModel.swift */; };
 		278BBECA2BE1311C0088AB47 /* TrafficLightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBEC92BE1311C0088AB47 /* TrafficLightScreen.swift */; };
 		278BBECC2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278BBECB2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278BBC742BE14949002D144F /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		278BBC772BE14BF0002D144F /* TrafficLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightTests.swift; sourceTree = "<group>"; };
+		278BBC792BE18832002D144F /* TrafficLightScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightScreenViewModelTests.swift; sourceTree = "<group>"; };
+		278BBC7C2BE1891C002D144F /* TrafficLightMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightMock.swift; sourceTree = "<group>"; };
 		278BBEC62BE129120088AB47 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		278BBEC92BE1311C0088AB47 /* TrafficLightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightScreen.swift; sourceTree = "<group>"; };
 		278BBECB2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightScreenViewModel.swift; sourceTree = "<group>"; };
@@ -58,9 +66,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		278BBC762BE14BD2002D144F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				278BBC772BE14BF0002D144F /* TrafficLightTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		278BBC7B2BE18904002D144F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				278BBC7C2BE1891C002D144F /* TrafficLightMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		278BBEC32BE127C00088AB47 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				278BBC742BE14949002D144F /* TrafficLight.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				278BBED12BE138D40088AB47 /* MainViewModelTests.swift */,
+				278BBC792BE18832002D144F /* TrafficLightScreenViewModelTests.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -121,8 +147,8 @@
 		27EACE102BE126C700422A9B /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
-				278BBEC42BE127C80088AB47 /* Screens */,
 				278BBEC32BE127C00088AB47 /* Models */,
+				278BBEC42BE127C80088AB47 /* Screens */,
 				27EACE112BE126C700422A9B /* TrafficLightApp.swift */,
 				27EACE152BE126C800422A9B /* Assets.xcassets */,
 				27EACE172BE126C800422A9B /* Preview Content */,
@@ -141,6 +167,8 @@
 		27EACE212BE126C900422A9B /* TrafficLightTests */ = {
 			isa = PBXGroup;
 			children = (
+				278BBC7B2BE18904002D144F /* Mocks */,
+				278BBC762BE14BD2002D144F /* Models */,
 				278BBED02BE138B70088AB47 /* Screens */,
 			);
 			path = TrafficLightTests;
@@ -248,6 +276,7 @@
 			files = (
 				27EACE142BE126C700422A9B /* MainScreen.swift in Sources */,
 				27EACE122BE126C700422A9B /* TrafficLightApp.swift in Sources */,
+				278BBC752BE14949002D144F /* TrafficLight.swift in Sources */,
 				278BBECC2BE1312D0088AB47 /* TrafficLightScreenViewModel.swift in Sources */,
 				278BBEC72BE129120088AB47 /* MainViewModel.swift in Sources */,
 				278BBECA2BE1311C0088AB47 /* TrafficLightScreen.swift in Sources */,
@@ -258,7 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278BBC782BE14BF0002D144F /* TrafficLightTests.swift in Sources */,
 				278BBED22BE138D40088AB47 /* MainViewModelTests.swift in Sources */,
+				278BBC7D2BE1891C002D144F /* TrafficLightMock.swift in Sources */,
+				278BBC7A2BE18832002D144F /* TrafficLightScreenViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,13 +9,23 @@ import SwiftUI
 
 struct TrafficLightScreen: View {
     @ObservedObject var viewModel = TrafficLightScreenViewModel()
-    var carModel: String
+    var carModel = ""
 
     var body: some View {
         VStack {
+            Text("Driving \(carModel)")
+            Spacer()
+            ForEach(viewModel.lights) { item in
+                Circle()
+                    .fill(item.light.color.opacity(item.opacity))
+                    .frame(maxWidth: 100)
+            }
             Spacer()
         }
-        .navigationTitle("Driving \(carModel)")
+        .padding()
+        .onDisappear {
+            viewModel.viewDisappear()
+        }
     }
 }
 
