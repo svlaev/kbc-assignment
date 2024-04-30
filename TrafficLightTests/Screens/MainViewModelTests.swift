@@ -1,10 +1,3 @@
-//
-//  MainViewModelTests.swift
-//  TrafficLightTests
-//
-//  Created by Stanislav Vlaev on 30.04.24.
-//
-
 import XCTest
 @testable import TrafficLight
 
