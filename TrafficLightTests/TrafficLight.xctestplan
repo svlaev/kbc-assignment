@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "F17B9B41-4652-4DAD-BB06-B3557E5D5A6C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TrafficLight.xcodeproj",
+      "identifier" : "27EACE0D2BE126C700422A9B",
+      "name" : "TrafficLight"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TrafficLight.xcodeproj",
+        "identifier" : "27EACE1D2BE126C900422A9B",
+        "name" : "TrafficLightTests"
+      }
+    }
+  ],
+  "version" : 1
+}

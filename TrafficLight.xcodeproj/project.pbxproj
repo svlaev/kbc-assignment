@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278110FC2BE1AE990048B972 /* TrafficLight.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TrafficLight.xctestplan; sourceTree = "<group>"; };
 		278BBC742BE14949002D144F /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
 		278BBC772BE14BF0002D144F /* TrafficLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightTests.swift; sourceTree = "<group>"; };
 		278BBC792BE18832002D144F /* TrafficLightScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightScreenViewModelTests.swift; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 		27EACE212BE126C900422A9B /* TrafficLightTests */ = {
 			isa = PBXGroup;
 			children = (
+				278110FC2BE1AE990048B972 /* TrafficLight.xctestplan */,
 				278BBC7B2BE18904002D144F /* Mocks */,
 				278BBC762BE14BD2002D144F /* Models */,
 				278BBED02BE138B70088AB47 /* Screens */,
